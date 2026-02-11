@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marvin Klaproth — CV</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --rule: #e5e7eb;
+      --accent: #111827;
+      --max: 1040px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.55;
+      letter-spacing: 0.1px;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 44px 20px 64px;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.15;
+      letter-spacing: -0.6px;
+    }
+
+    .tagline {
+      margin: 0;
+      font-size: 15px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .contact {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13.5px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+    }
+
+    .contact span {
+      white-space: nowrap;
+    }
+
+    .contact .sep {
+      color: #cbd5e1;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(17, 24, 39, .18);
+      transition: border-color .15s ease, opacity .15s ease;
+    }
+
+    a:hover {
+      border-bottom-color: rgba(17, 24, 39, .55);
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 12px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    li {
+      margin: 0;
+    }
+
+    .skills ul {
+      padding-left: 0;
+      list-style: none;
+      gap: 6px;
+    }
+
+    /* Ensure every skill row has the SAME label→content gap */
+    .skills li {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      /* label column width = consistent gap */
+      column-gap: 12px;
+      /* consistent gap between label and list */
+      align-items: start;
+    }
+
+    .skills strong {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .skills span {
+      color: var(--text);
+    }
+
+    .block {
+      padding-top: 6px;
+    }
+
+    .job {
+      padding-top: 2px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .job-head {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      align-items: baseline;
+    }
+
+    .job-title {
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: -0.1px;
+    }
+
+    .job-meta {
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: baseline;
+    }
+
+    .job-meta .dot {
+      color: #cbd5e1;
+    }
+
+    .tech {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .tech strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--rule);
+      margin: 10px 0 0;
+    }
+
+    /* Print-friendly */
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        padding: 0;
+      }
+
+      a {
+        border-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Marvin Klaproth</h1>
+      <p class="tagline">Senior Frontend Engineer — Performance, DX &amp; Shipping</p>
+
+      <p class="contact">
+        <span>Cologne, Germany</span><span class="sep">|</span>
+        <span><a href="mailto:marvin.klaproth@gmail.com">marvin.klaproth@gmail.com</a></span><span class="sep">|</span>
+        <span><a href="https://linkedin.com/in/marvin-k-1667471b0">linkedin.com/in/marvin-k-1667471b0</a></span><span
+          class="sep">|</span>
+        <span><a href="https://github.com/Marvin1003">github.com/Marvin1003</a></span>
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Summary</h2>
+        <p>
+          Senior engineer with ~8 years of experience owning frontend delivery end-to-end — architecture,
+          performance, testing, observability, and experimentation. Known for shipping quickly without sacrificing
+          quality through pragmatic tooling, CI/CD improvements, and maintainable, scalable code.
+        </p>
+      </section>
+
+      <section>
+        <h2>Selected achievements</h2>
+        <ul>
+          <li>Consolidated separate Vue 2 and Vue 3 component libraries into a single cross-version library using
+            vue-demi, cutting duplicate work and simplifying long-term maintenance and migration.</li>
+          <li>Introduced a release-please-based versioning &amp; deployment workflow (GitHub Actions), standardizing
+            semantic releases and reducing release prep time to ~2:30.</li>
+          <li>Strengthened release confidence by introducing/maintaining automated testing (Playwright, Vitest) and
+            component-driven development workflows (Storybook).</li>
+          <li>Drove Core Web Vitals improvements through profiling and bundling/SSR optimizations across Vue/Nuxt
+            applications.</li>
+        </ul>
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li><strong>Languages</strong><span>TypeScript, JavaScript, HTML, CSS, Node.js</span></li>
+          <li><strong>Frameworks</strong><span>Vue, Nuxt, React, Next.js, Gatsby, LitElement</span></li>
+          <li><strong>Performance</strong><span>Core Web Vitals, Web Performance Profiling, Web Typography</span></li>
+          <li><strong>Tooling</strong><span>Vite, Webpack, Rollup, Babel, Yarn Berry, Monorepos (Lerna, Yarn
+              Workspaces)</span></li>
+          <li><strong>Quality</strong><span>Playwright, Vitest, Storybook, CI/CD, GitHub Actions</span></li>
+          <li><strong>Observability &amp; Experiments</strong><span>Sentry, Kameleoon (A/B testing)</span></li>
+          <li><strong>Cloud/Edge</strong><span>AWS, Terraform, Akamai</span></li>
+          <li><strong>Process</strong><span>Scrum</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <article class="job">
+          <div class="job-head">
+            <div class="job-title">Dyn Media GmbH — Fullstack Developer</div>
+            <div class="job-meta">
+              <span>Aug 2023 — Present</span>
+            </div>
+          </div>
+
+          <ul>
+            <li>Owned frontend delivery end-to-end (architecture, testing, observability, experimentation) and served as
+              the go-to person for frontend decisions across teams.</li>
+            <li>Ensured a consistent and maintainable user experience by establishing scalable UI patterns and shared
+              components (Vue/Nuxt; also worked with React/Next.js where needed).</li>
+            <li>Implemented and maintained automated testing (Playwright, Vitest) and Storybook workflows to reduce
+              regressions and improve release confidence.</li>
+            <li>Designed, executed, and analyzed A/B tests (Kameleoon) to validate UX changes and inform product
+              decisions.</li>
+            <li>Improved observability and debugging practices with Sentry; strengthened incident response for frontend
+              issues.</li>
+            <li>Introduced release automation with release-please + GitHub Actions, standardizing semantic versioning
+              and reducing manual release effort (~2:30 prep time).</li>
+            <li>Mentored engineers and supported hiring via technical interviews; helped raise engineering standards
+              through knowledge sharing.</li>
+          </ul>
+
+          <p class="tech"><strong>Tech:</strong> Vue, Nuxt, TypeScript, React, Next.js, Sentry, Playwright, Vitest,
+            Storybook, Kameleoon, AWS, Terraform, Akamai, GitHub Actions, release-please</p>
+
+          <div class="divider"></div>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <div class="job-title">MeinAuto GmbH — Frontend Performance Specialist</div>
+            <div class="job-meta">
+              <span>Feb 2021 — Jul 2023</span>
+            </div>
+          </div>
+
+          <ul>
+            <li>Built and maintained frontend architecture concepts for large Nuxt/Vue applications with emphasis on
+              scalability and clarity.</li>
+            <li>Optimized performance with a focus on Core Web Vitals through profiling, rendering strategy, and bundle
+              optimization (Webpack/Vite/Rollup).</li>
+            <li>Created efficient processes by building and managing internal libraries and monorepos (Lerna, Yarn
+              Berry/Workspaces) to reduce duplication and accelerate delivery.</li>
+            <li>Built a shared component library compatible with Vue 2 and Vue 3 (via vue-demi) to enable reuse and
+              simplify migration work.</li>
+            <li>Increased quality through CI/CD integration within the QA pipeline and supported teams via cross-team
+              collaboration and hands-on assistance.</li>
+          </ul>
+
+          <p class="tech"><strong>Tech:</strong> Nuxt, Vue, TypeScript, Webpack, Vite, Rollup, Lerna, Vuex/Pinia, Yarn
+            Berry, vue-demi, Storybook, Contentful, Tailwind CSS, Docker</p>
+
+          <div class="divider"></div>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <div class="job-title">Digitas Germany — Frontend Developer</div>
+            <div class="job-meta">
+              <span>Sep 2018 — Jan 2021</span>
+            </div>
+          </div>
+
+          <ul>
+            <li>Developed modules in the e-commerce domain and for federal ministries, delivering reusable and
+              maintainable UI components.</li>
+            <li>Primary frontend point of contact for a large-scale e-commerce project; contributed to modern frontend
+              architecture decisions.</li>
+            <li>Performed performance optimizations and ensured scalable, maintainable frontend solutions.</li>
+          </ul>
+
+          <p class="tech"><strong>Tech:</strong> Hybris, LitElement (Web Components), Vue, Tailwind CSS, Bootstrap,
+            Webpack</p>
+
+          <div class="divider"></div>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <div class="job-title">Eurasia Development GmbH — Frontend Developer</div>
+            <div class="job-meta">
+              <span>Jun 2018 — Aug 2018</span>
+            </div>
+          </div>
+
+          <ul>
+            <li>Developed websites for the tourism sector using React, Redux, and Next.js.</li>
+          </ul>
+
+          <p class="tech"><strong>Tech:</strong> React, Redux, Next.js</p>
+
+          <div class="divider"></div>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <div class="job-title">ProjectValue GmbH — Frontend Developer (Minijob)</div>
+            <div class="job-meta">
+              <span>Apr 2018 — May 2018</span>
+            </div>
+          </div>
+
+          <ul>
+            <li>Built data visualizations using D3.js.</li>
+          </ul>
+
+          <p class="tech"><strong>Tech:</strong> D3.js</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+
+        <div class="block">
+          <p><strong>ILS Institut für Lern- und Bildungssysteme GmbH — WebMaster</strong></p>
+          <p class="job-meta"><span>Sep 2017 — Mar 2018</span></p>
+        </div>
+
+        <div class="block">
+          <p><strong>bib International College — Web &amp; Mobile Application Developer (1 semester)</strong></p>
+          <p class="job-meta"><span>Oct 2016 — Mar 2017</span></p>
+        </div>
+
+        <div class="block">
+          <p><strong>Bezirksregierung Detmold — Intermediate School Certificate (Fachoberschulreife)</strong></p>
+          <p class="job-meta"><span>Jan 2016 — Jun 2016</span></p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
